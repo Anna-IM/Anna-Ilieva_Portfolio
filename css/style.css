@@ -1,21 +1,24 @@
 /* My code */
 /*Header*/
- h1, .intro {
+ h1,
+ .intro {
      font-family: "Lobster";
-     padding-left: 20px;
-     padding-right: 10px;
 }
 
-.page-header {
-  flex-wrap: wrap;
-  overflow: auto;
-  display: flex;
-  justify-content: space-between;
+ .page-header {
+     flex-wrap: wrap;
+     overflow: auto;
+     display: flex;
+     justify-content: space-between;
 }
 
  h1 {
      font-size: 45px;
-     padding-top: 10px;
+     padding: 10px 10px 0 20px;
+}
+
+ .intro {
+     padding-left: 30px;
 }
 
  .logo {
@@ -27,14 +30,13 @@
 }
 /*End header*/
 
-body {
-    background-color: #ddddde;
-    width: 100%;
+ body {
+     background-color: #ddddde;
+     width: 100%;
 }
 
-.img-responsive {
+ .img-responsive {
      align-self: center;
-     padding-left: 10px;
      padding-right: 10px;
 }
 
@@ -43,11 +45,12 @@ body {
      font-size: 30px;
 }
 
- h2, .icon-bar {
+ h2,
+ .icon-bar {
      font-family: "Contrail One", cursive;
 }
-
 /*Content*/
+
  .container {
      max-width: 100%;
      padding: 20px;
@@ -59,60 +62,60 @@ body {
      flex-direction: row;
 }
 
-.flex-item {
-  border: 5px solid #ddd;
-  box-sizing: border-box;
+ .flex-item {
+     border: 5px solid #ddd;
+     box-sizing: border-box;
 }
 
-.caption {
-    background-color: #fff;
-    font-family: "Contrail One", cursive;
-    font-weight: 700;
-    color: #000;
-    padding-right: 10px;
-    padding-left: 20px;
-    text-align: center;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+ .caption {
+     background-color: #fff;
+     font-family: "Contrail One", cursive;
+     font-weight: 700;
+     color: #000;
+     padding-right: 10px;
+     padding-left: 20px;
+     text-align: center;
+     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 }
 
-a {
-    text-align: center;
-    text-decoration: none;
+ a {
+     text-align: center;
+     text-decoration: none;
 }
 
-.img {
-    width: 100%;
-    height: auto;
-    background-position: center;
-    object-fit: cover;
-    background-repeat: no-repeat;
+ .img {
+     width: 100%;
+     height: auto;
+     background-position: center;
+     object-fit: cover;
+     background-repeat: no-repeat;
 }
 
 /* mouse over link */
-.img:hover {
-    cursor: pointer;
-    opacity: 1;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+ .img:hover {
+     cursor: pointer;
+     opacity: 1;
+     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 }
 /*End Content*/
 
 /*Footer*/
-.container-fluid {
-    background-color: #c3c7d5;
-    padding: 5px 40px 10px 20px;
-    border-radius: 20px;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
+ .container-fluid {
+     background-color: #c3c7d5;
+     padding: 5px 40px 10px 20px;
+     border-radius: 20px;
+     margin-bottom: 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     flex-wrap: nowrap;
 }
 
-.footer-item {
-    color: #000;
-    font-family: "Lobster", cursive;
-    text-align: center;
-    font-size: 16px;
+ .footer-item {
+     color: #000;
+     font-family: "Lobster", cursive;
+     text-align: center;
+     font-size: 16px;
 }
 
 /*Social media icons*/
@@ -157,8 +160,9 @@ a {
      border: 3px solid #3b5998;
      background-color: #fff;
      color: #3b5998;
-     /*background: #3b5998;
-     color: #fff;*/
+    /*Original colors: background: #3b5998;
+     color: #fff;
+    */
 }
 
 /* LinkedIn */
@@ -166,8 +170,9 @@ a {
      border: 3px solid #0077b5;
      background-color: #fff;
      color: #0077b5;
-     /*background: #0077b5;
-     color: #fff;*/
+    /*Original colors: background: #0077b5;
+     color: #fff;
+    */
 }
 
 /* CodePen */
@@ -175,8 +180,9 @@ a {
      border: 3px solid #000;
      background-color: #fff;
      color: #000;
-     /*background: #fff;
-     color: #000;*/
+    /*Original colors: background: #fff;
+     color: #000;
+    */
 }
 
 /* GitHub */
@@ -184,8 +190,9 @@ a {
      border: 3px solid #000;
      background-color: #fff;
      color: #000;
-     /*background: #000;
-     color: #fff;*/
+    /*Original colors: background: #000;
+     color: #fff;
+    */
 }
 /*End footer*/
 
@@ -215,16 +222,19 @@ a {
          -o-background-size: 100% auto;
          background-size: 100% auto;
     }
-       .logo {
-        order: 1;
-        max-width: 100%;
-      }
-      .title {
-        order: 2;
-      }
-      .fa {
-        width: 25%;
-      }
+     .logo {
+         order: 1;
+         max-width: 100%;
+    }
+     .title {
+         order: 2;
+    }
+     .fa {
+         width: 25%;
+    }
+     .page-header {
+         justify-content: center;
+    }
 }
 
  @media only screen and (min-width: 733px) and (max-width: 959px) {
@@ -234,18 +244,18 @@ a {
          -o-background-size: 100% auto;
          background-size: 100% auto;
     }
-    .logo {
-     order: 1;
-   }
-   .title {
-     order: 2;
-   }
-   .flex-item {
-     width: 33%;
-   }
-   .fa {
-     width: 25%;
-   }
+     .logo {
+         order: 1;
+    }
+     .title {
+         order: 2;
+    }
+     .flex-item {
+         width: 33%;
+    }
+     .fa {
+         width: 25%;
+    }
 }
 
  @media screen and (min-width: 960px) {
@@ -258,13 +268,13 @@ a {
          -o-background-size: 100% auto;
          background-size: 100% auto;
     }
-    .logo {
-     order: 1;
-   }
-   .title {
-     order: 2;
-   }
-   .flex-item {
-     width: 33%;
-   }
+     .logo {
+         order: 1;
+    }
+     .title {
+         order: 2;
+    }
+     .flex-item {
+         width: 33%;
+    }
 }
