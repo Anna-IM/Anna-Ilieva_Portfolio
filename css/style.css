@@ -1,4 +1,13 @@
 /* My code */
+@font-face {
+  font-family: "Contrail One";
+  src: url("Contacts/ContrailOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("Contacts/Lobster-Regular.ttf");
+}
 
 /*Header*/
 
@@ -15,7 +24,7 @@ h1, .intro {
 
 h1 {
   font-size: 45px;
-  padding: 10px 10px 0 20px;
+  padding: 10px 20px 0 20px;
 }
 
 .intro {
@@ -33,14 +42,55 @@ h1 {
 /*End header*/
 
 body {
-  background-color: #ddddde;
+  /* background-color: #e7e7e7; */
+  background-color: #f2f2f2;
   width: 100%;
 }
 
-.img-responsive {
-  align-self: center;
-  padding-right: 10px;
+.container-foto {
+  padding: 20px 40px;
+  justify-content: center;
+  position: relative;
+  /* -webkit-box-shadow: inset 1px 2px 28px 6px rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 1px 2px 28px 6px rgba(0,0,0,0.6); */
 }
+
+.typewriter {
+  position: absolute;
+  top: 30px;
+  padding: 20px 15px;
+  overflow: hidden;
+  /* border-right: 15em red; */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.3em;
+  animation: typing 4s steps(30, end);
+}
+
+.img-responsive {
+  position: relative;
+  box-shadow: 1px 2px 28px 6px rgba(0,0,0,0.6);
+  opacity: 0.4;
+}
+
+h3 {
+  color: #000;
+  font-size: 28px;
+  padding: 10px 25px;
+  font-family: "Contrail One", cursive;
+  /* -webkit-text-stroke: 0.5px #000; */
+	text-shadow: 2px 4px 4px #08127d;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* @keyframes blink-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: red; }
+} */
 
 h2 {
   text-align: center;
@@ -65,8 +115,9 @@ h2, .icon-bar {
 }
 
 .flex-item {
-  border: 5px solid #ddd;
+  border: 5px solid #e7e7e7;
   box-sizing: border-box;
+  padding: 0 10px;
 }
 
 .caption {
@@ -77,7 +128,7 @@ h2, .icon-bar {
   padding-right: 10px;
   padding-left: 20px;
   text-align: center;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.4);
 }
 
 a {
@@ -91,6 +142,7 @@ a {
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
+  border: 3px solid #fff;
 }
 
 /* mouse over link */
@@ -106,8 +158,8 @@ a {
 /*Footer*/
 
 .container-fluid {
-  background-color: #c3c7d5;
-  padding: 5px 40px 10px 20px;
+  /* background-color: #c3c7d5; */
+  padding: 5px 20px 10px 20px;
   border-radius: 20px;
   margin-bottom: 0;
   display: flex;
@@ -129,6 +181,7 @@ a {
   margin-top: 10px;
   text-decoration: none;
   color: #44515c;
+  justify-content: center;
 }
 
 ul li {
@@ -136,6 +189,7 @@ ul li {
   display: inline-block;
   text-align: center;
   align-self: center;
+  padding-left: 0;
 }
 
 ul li a i {
@@ -208,16 +262,6 @@ i {
 
 /*End footer*/
 
-@font-face {
-  font-family: "Contrail One";
-  src: url("Contacts/ContrailOne-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Lobster";
-  src: url("Contacts/Lobster-Regular.ttf");
-}
-
 /*Media queries*/
 
 @media screen and (max-width: 732px) {
@@ -247,6 +291,16 @@ i {
   }
   .page-header {
     justify-content: center;
+  }
+  .typewriter {
+    top: 25px;
+    padding: 10px 15px;
+  }
+  h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 0.2em;
   }
 }
 
