@@ -2,11 +2,13 @@
 @font-face {
   font-family: "Contrail One";
   src: url("Contacts/ContrailOne-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Lobster";
   src: url("Contacts/Lobster-Regular.ttf");
+  font-display: swap;
 }
 
 /*Header*/
@@ -107,7 +109,6 @@ h2, .icon-bar {
 
 .flex-item {
   background-color: #fff;
-  /* border: 5px solid #e7e7e7; */
   box-sizing: border-box;
   padding: 0 20px;
 }
@@ -128,7 +129,7 @@ a {
 }
 
 .img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   background-position: center;
   object-fit: cover;
@@ -142,6 +143,35 @@ a {
   cursor: pointer;
   opacity: 1;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.article-me {
+  display: block;
+  max-width: 100%;
+  background-color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.article-text {
+  font-size: 18px;
+  background-color: #fff;
+  text-align: left;
+  text-indent: 0.5em;
+  font-weight: 500;
+  padding: 5px;
 }
 
 /*End Content*/
@@ -212,9 +242,6 @@ i {
   border: 3px solid #3b5998;
   background-color: #fff;
   color: #3b5998;
-  /*Original colors: background: #3b5998;
-     color: #fff;
-    */
 }
 
 /* LinkedIn */
@@ -223,9 +250,6 @@ i {
   border: 3px solid #0077b5;
   background-color: #fff;
   color: #0077b5;
-  /*Original colors: background: #0077b5;
-     color: #fff;
-    */
 }
 
 /* CodePen */
@@ -234,9 +258,6 @@ i {
   border: 3px solid #000;
   background-color: #fff;
   color: #000;
-  /*Original colors: background: #fff;
-     color: #000;
-    */
 }
 
 /* GitHub */
@@ -245,9 +266,6 @@ i {
   border: 3px solid #000;
   background-color: #fff;
   color: #000;
-  /*Original colors: background: #000;
-     color: #fff;
-    */
 }
 
 /*End footer*/
@@ -295,6 +313,9 @@ i {
   .flex-item {
     flex-basis: 100%;
   }
+  .my-img {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 733px) and (max-width: 959px) {
@@ -317,6 +338,9 @@ i {
   .fa {
     width: 25%;
   }
+  .my-img {
+    max-width: 50%;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -337,5 +361,9 @@ i {
   }
   .flex-item {
     width: 33%;
+  }
+  .my-img {
+    max-width: 50%;
+    justify-self: center;
   }
 }
